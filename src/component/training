@@ -1,0 +1,8 @@
+const handleUp=()=>{
+    shown.map((ele) => {
+     if(shown.indexOf(ele) == action.payload ) 
+      { setelement (shown[shown.indexOf(ele)])
+       shown.splice(shown.indexOf(ele), 1);
+       shown.splice( +1, 0, element)}}
+       )
+}
