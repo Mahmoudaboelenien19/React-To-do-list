@@ -1,13 +1,4 @@
-import React, {
-  useEffect,
-  useState,
-  useRef,
-  useReducer,
-  useCallback,
-} from "react";
- 
-  
-   
+
   const handelTime = () => new Date().toLocaleTimeString()
   
   const handelDate =() =>new Date().toLocaleDateString();

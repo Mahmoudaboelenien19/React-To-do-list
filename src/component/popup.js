@@ -1,19 +1,33 @@
-import React, { useEffect, useRef } from 'react'
+import React, {  memo, useEffect, useRef } from 'react'
+import Pop from './pop';
 
-function Popup({color,msg}) {
+function Popup({pop,setpop}) {
+
 const vald=useRef()
 
  
+// useEffect(()=>{
     
-    
+//   const timer = setInterval(()=>{
+//       setpop(pop=>pop.filter(i=>i.timeRemaining>0).map((item)=>{
+//       return {
+//         ...item, timeRemaining: item.timeRemaining - 2
+//       }
+//     }))
+//   },2000)
+//   return () => clearInterval(timer);
+// },[])
+
+    // useEffect(()=>{setTimeout(() => {
+    //   setpop(pop => pop.filter((e) =>e)).map((item)=>{
+    //           return {
+    //             ...item, timeRemaining: item.timeRemaining - 2
+    //           }
+    //         })
+    // }, 2000);}
+    // ,[])
   return (
-    <div   id="vald" ref={vald}
-    className="visible" style={{ background: 
-`        linear-gradient(135deg,rgba(255, 255, 255, 0.753),${color}
-`    }}>
-               
-       {color=="green"? <i className="bi bi-check2"></i>: <i className="bi bi-exclamation-circle-fill"></i> } {msg}
-    </div>
+ 
   )
 }
 

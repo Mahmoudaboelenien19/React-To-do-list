@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
+import "react-toastify/dist/ReactToastify.css";
+
 import './App.css';
 import Header from './component/Header';
 import Loading from './component/Loading';
